@@ -139,14 +139,47 @@ button:nth-of-type(2){
 /* Config. Footer */
 
 footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background-color: #D8DFE8;
     border-top:1px solid #0A3871;
 }
 
 footer > .center{
-    padding:1%;
+    padding:2%;
     display:flex;
     justify-content: space-between;
 }
 
 /* Fim Config. Footer */
+
+/* Config. Responsivo */
+
+@media screen and (max-width:760px){
+
+    main > .center{
+        flex-direction: column;
+    }
+
+    textarea{
+        margin-top:20px
+    }
+
+    .box__mensagem{
+        min-height: 200px;
+        padding:5%;
+        margin: 30px auto 100px auto;
+    }
+
+    .image-single{display:none;}
+
+    #btnCopiar{
+        margin-top:10%;
+    }
+
+}
+
+
+/*  */
