@@ -23,24 +23,30 @@
     <main class="principal">
         <div class="center">
             <section class="input-text">
-                <textarea name="textarea" id="textarea" placeholder="Digite seu texto..."></textarea>
+                <textarea name="textarea" id="inputText" placeholder="Digite seu texto..."></textarea>
             </section>
-        
+            
             <section class="box__mensagem">
-                <div class="text-criptografado"></div>
-                <div class="image-single"><img src="img/searching.svg" alt="Nenhuma mensagem encontrada"></div>
-                <div class="text-single">
+                <div class="text-criptografado">
+                    <p id="outputText"></p>
+                </div>
+                <div class="image-single" id="image-single"><img src="img/searching.svg" alt="Nenhuma mensagem encontrada"></div>
+                <div class="text-single" id="text-single">
                     <h2>Nenhuma mensagem encontrada</h2>
                     <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
                 </div><!--Text Single-->
+
+                <button id="btnCopiar" onclick="copiarTexto()">Copiar</button>
+                
             </section><!--Box Mensagem-->
             
             
         </div><!--Centralização-->
-        <!-- <section class="btn__acao">
-                <button id="btnEncriptar">Criptografar</button>
-                <button id="btnDescriptar">Descriptografar</button>
-            </section> -->
+
+            <section class="btn__acao">
+                <button id="btnEncriptar" onclick="criptografar(); alterarMensagem()">Criptografar</button>
+                <button id="btnDescriptar" onclick="descriptografar(); alterarMensagem()">Descriptografar</button>
+            </section>
     </main><!--Principal-->
 
     <footer class="rodape">
